@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style-finalizar-pedido.css">
+    <title>Finalizar Pedido</title>
+</head>
+<body>
+    <header class="cabecalho-tela3">
+        <a href="./nossosProdutos.html" class="voltarTelaProdutos">
+            <img src="../img/sair.svg" alt="" class="iconVoltar">
+            <p>Voltar aos Produtos</p>
+        </a>
+    </header>
+    <main class="mainPrincipal-tela3">
+        <div class="conteudoMain-tela3">
+            <h1 class="finalizarPedido">Finalizar Pedido</h1>
+        </div>
+        <div class="informacoesMain">
+            <div class="resumoPedido">
+                <h2 class="tituloResumoPedido">
+                    Resumo do Pedido
+                </h2>
+                <div class="descricaoGeralProduto">
+                    <img src="../img/brownie3.jpeg" alt="" class="brownie1">
+                    <div class="descricaoProduto">
+                        <p class="nomeProduto">
+                            Brownie de Pote
+                        </p>
+                        <p class="descricao">
+                            Brownie em camadas com creme e ganache no potinho
+                        </p>
+                    </div>
+                    <p class="preco">
+                        R$ 18,00
+                    </p>
+                </div>
+                <div class="total">
+                    <p class="pTotal">
+                        Total
+                    </p>
+                    <p class="pPreco">
+                        R$ 18,00
+                    </p>
+                </div>
+            </div>
+            <div class="informacoesEntrega">
+                <form class="formulario" action="/enviar_dados" method="post">
+                    <h2 class="tituloDoFormulario">
+                        Informações de Entrega
+                    </h2>
+                    <label for="nomeCompleto" class="campoNome">
+                        <img src="../img/iconUsuario.svg" alt="iconUsuario" class="iconeFormulario">
+                        Nome Completo
+                    </label>
+                    <input class="inCampoNome" type="text" id="nomeCompleto" name="nomeCompleto" placeholder="Seu Nome" required>
+
+                    <label for="whatsappFormulario" class="campoWhatsapp">
+                        <img src="../img/iconTelefone.svg" alt="iconTelefone" class="iconeFormulario">
+                        WhatsApp
+                    </label>
+                    <input class="inCampoWhats" type="text" id="whatsappFormulario" name="whatsappFormulario" placeholder="(00) 00000-0000" required>
+
+                    <label for="enderecoEntrega" class="campoEntrega">
+                        <img src="../img/iconLocalizacao.svg" alt="iconLocalização" class="iconeFormulario">
+                        Endereço de Entrega
+                    </label>
+                    <input class="enderecoDeEntrega" type="text" id="enderecoEntrega" name="nome" placeholder="Rua, número, complemento, bairro, cidade" required>
+
+                    <label for="enderecoEntrega" class="campoObservacao">
+                        Observações (opcional)
+                    </label>
+                    <input class="inCampoObs" type="text" id="enderecoEntrega" name="nome" placeholder="Alguma observação sobre o pedido?">
+
+                    <input class="botaoConfirmarPedido" type="submit" id="enviar" value="Confirmar Pedido">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="hFooter">
+            <div class="primeiraParte">
+                <h1 class="nomeMarca-2">Ayssa Doces</h1>
+                <p class="msg-2">Os melhores brownies da cidade!</p>
+            </div>
+            <div class="segundaParte">
+                <p class="entreEmContato">Entre em Contato</p>
+                <div class="redesSociais">
+                    <div class="whatsapp">
+                        <a href="" class="whatsapp">
+                            <img src="../img/whatsapp.svg" alt="pin whatsapp" class="zap">
+                            <p>WhatsApp</p>
+                        </a>
+                       
+                    </div>
+                    <div class="instagram">
+                        <a href="" class="instagram">
+                            <img src="../img/instagram.svg" alt="pin instagram" class="insta">
+                            <p>Instagram</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="terceiraParte">
+                <p class="horarioAtendimentoTitulo">
+                    Horário de Atendimento
+                </p>
+                <p class="diasAtendimento">
+                    Segunda a Sábado
+                </p>
+                <p class="horarioDeAtendimento">
+                    9h às 18h
+                </p>
+            </div>
+        </div>
+        <div class="fFooter">
+            <p class="msgFinal">
+                Feito com amor 💞
+            </p>
+            <p class="direitosAutorais">
+                &copy; 2025 Ayssa Doces. Todos os  direitos reservados.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

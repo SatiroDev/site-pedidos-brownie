@@ -5,7 +5,7 @@ body {
     width: 100%;
 }
 
-.cabecalho-tela2 {
+.cabecalho-tela3 {
     position: relative;
     display: flex;
     margin-left: 5%;
@@ -18,132 +18,192 @@ body {
 
 }
 
-.voltar {
+.voltarTelaProdutos {
     display: flex;
     justify-content: center;
     column-gap: 15px;
     text-decoration: none;
     border-radius: 15px;
     transition: 0.3s ease;
-    width: 100px;
+    width: 180px;
 }
 
-.voltar:hover {
+.voltarTelaProdutos:hover {
     background-color: #ecd9ff;
 }
 
-
-.mainPrincipal-tela2 {
+.mainPrincipal-tela3 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     row-gap: 25px;
     width: 100%;
-    height: 85%;
-
-
 }
 
-.conteudoMain-tela2 {
+.conteudoMain-tela3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 35%;
     min-width: 350px;
-    
 }
 
-.nossosProdutos {
-    font-size: 70px;
+.finalizarPedido {
+    font-size: 55px;
     color: #511b9e;
     margin: 0;
     text-align: center;
+
 }
 
-.msg-NossosProdutos {
-    text-align: center;
-    font-size: 28px;
-    color: #664f57;
-    margin: 0;
-}
-
-.cardapio {
+.informacoesMain {
     display: flex;
-    column-gap: 20px;
-    flex-wrap: wrap; 
-    row-gap: 20px;
-    align-items: center;
+    width: 75%;
+    min-height: 450px;
+    column-gap: 25px;
     justify-content: center;
+    flex-wrap: wrap; 
+    row-gap: 15px;
 }
 
-.imgBrownie-1 {
-    width: 300px;
-    transition: 0.2s ease;
-
+.resumoPedido {
+    border: 2px solid;
+    padding: 15px;
+    font-size: 15px;
+    background-color: white;
+    border-radius: 15px;
+    border-color: #dcdcfc;
+    row-gap: 50px;
+    width: 450px;
+    min-width: 230px; /* largura das telas*/
+    height: 250px;
 }
 
-.imgBrownie-1:hover {
-    transform: scale(1.1);
-    transition: 0.2s ease;
+.tituloResumoPedido {
+    color: #511b9e;
+    font-size: 23px;
 }
 
-.brownieCard {
-    position: relative;
-    overflow: hidden;
-    width: 300px;
-    height: 490px;
+.descricaoGeralProduto {
     display: flex;
     align-items: center;
-    flex-direction: column;
-    border-radius: 20px;
-    transition: border 0.2s ease;
-    border: 0.1px solid transparent;
+    column-gap: 5px;
+    border-radius: 15px;
+    width: 100%;
+    background-color: #f4f4fc;
 }
 
-.brownieCard:hover {
-    transition: 0.2s ease;
-    border: 0.1px solid;
-    border-color: #b474fc;
-    box-shadow: 0 7px 10px 0.1px rgb(167, 167, 167);
+.brownie1 {
+    width: 110px;
+    height: 110px;
+    border-radius: 15px;
+    padding: 5px;
 }
 
-.descricaoGeral {
-    position:absolute;
+.descricaoProduto {
 
-    height: 180px;
-    background-color: white;
-    padding: 20px;
-    bottom: 0;
+    width: 240px;
+    min-width: 130px;
+
 }
 
-.nome, .preco {
+.nomeProduto {
     color: #740ce4;
 }
 
-.descricaoBrownie {
+.descricao {
     color: #664f57;
 }
 
-.fazerPedido {
+.preco {
+    color: #740ce4;
+}
+
+.total {
+    margin-top: 13px;
+    font-size: 23px;
+    display: flex;
+    height: 50px;
+    border-top: 2px solid;
+    border-color: #dcdcfc;
+    justify-content: space-between;
+    color: #511b9e;
+}
+
+
+.informacoesEntrega {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 85%;
-    height: 35px;
-    border-radius: 25px;
-    background: linear-gradient(to right ,#511b9e, #b474fc);
-    color: white;
-    text-decoration: none;
-    margin-top: 20px;
-    margin-left: 25px;
-    transition: filter 0.3s ease;
+    flex-direction: column;
+    width: 450px;
+
+    border: 2px solid;
+    padding: 15px;
+    background-color: white;
+    border-radius: 15px;
+    border-color: #dcdcfc;
+
 }
 
-.fazerPedido:hover {
-    background: #511b9e;
-    transition: filter 0.3s ease;
+.formulario {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    row-gap: 10px;
+}
+
+.tituloDoFormulario {
+    color: #511b9e;
+    font-size: 23px;
+}
+
+.iconeFormulario {
+    width: 20px;
+}
+
+.campoNome, .campoWhatsapp, .campoEntrega {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+    color: #534e4a;
+}
+
+input {
+    padding: 8px 12px;
+    width: 93%;
+    border-radius: 8px;
+    border: 1px solid;
+    border-color: #dcdcfc;
+}
+
+.enderecoDeEntrega {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+}
+
+.campoObservacao {
+    color: #534e4a;
+}
+
+.inCampoObs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.botaoConfirmarPedido {
+    width: 100%;
+
 }
 
 footer {
