@@ -42,7 +42,6 @@ body {
     width: 100%;
     height: 85%;
 
-
 }
 
 .conteudoMain-tela2 {
@@ -51,8 +50,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 35%;
-    min-width: 350px;
-    
+    min-width: 300px;
 }
 
 .nossosProdutos {
@@ -76,6 +74,8 @@ body {
     row-gap: 20px;
     align-items: center;
     justify-content: center;
+
+
 }
 
 .imgBrownie-1 {
@@ -111,11 +111,11 @@ body {
 
 .descricaoGeral {
     position:absolute;
-
     height: 180px;
     background-color: white;
     padding: 20px;
     bottom: 0;
+
 }
 
 .nome, .preco {
@@ -263,4 +263,9 @@ footer {
 
 .msgFinal {
     margin: 0;
+}
+
+
+.direitosAutorais {
+    text-align: center;
 }

@@ -20,9 +20,8 @@ body {
 .conteudoMain {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     width: 450px;
-    height: 300px;
     flex-direction: column;
     gap: 40px;
     margin-top: 45px;
@@ -32,7 +31,7 @@ body {
     font-size: 85px;
     color: #511b9e;
     margin: 0;
-    width: 495px;
+    width: 100%;
     text-align: center;
 }
 
@@ -40,17 +39,18 @@ body {
     font-size: 28px;
     color: #664f57;
     margin: 0;
+    text-align: center;
 }
 
 .verProdutos {
     display: flex;
-    height: 25%;
+    height: 50px;
     border-radius: 35px;
     margin: 0;
     background: linear-gradient(to right ,#511b9e, #b474fc);
     color: white;
     width: 170px;
-    height: 50px;
+    min-width: 25%;
     font-weight: bold;
     justify-content: center;
     align-items: center;
@@ -177,8 +177,14 @@ footer {
     margin: 0;
     color: #c17ca1;
     margin-top: 20px;
+    
 }
 
 .msgFinal {
     margin: 0;
+    
+}
+
+.direitosAutorais {
+    text-align: center;
 }
