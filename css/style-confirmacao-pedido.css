@@ -189,3 +189,9 @@ footer {
 .direitosAutorais {
     text-align: center;
 }
+
+.admin {
+    color: rgba(255, 255, 255, 0.192);
+    text-decoration: none;
+    padding-bottom: 5px;
+}
