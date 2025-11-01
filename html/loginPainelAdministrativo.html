@@ -4,30 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style-finalizar-pedido.css">
+    <link rel="stylesheet" href="../css/style-login-painel-admin.css">
     <link rel="icon" type="image/png" href="../img/logo.jpg">
     <title>Painel Administrativo</title>
 </head>
 <body>
     <header class="cabecalho-tela4">
-        <a href="./nossosProdutos.html" class="voltarTelaProdutos">
+        <a href="../index.html" class="voltarTelaProdutos">
             <img src="../img/sair.svg" alt="" class="iconVoltar">
             <p>Voltar</p>
         </a>
     </header>
     <main class="mainPrincipal-tela4">
         <div class="painelLoginAdmin">
-            <img src="" alt="">
-            <h1 class="finalizarPedido">Finalizar Pedido</h1>
             <form action="">
+                <div class="hTitulo">
+                    <div class="boxCadeado">
+                        <img src="../img/iconCadeado.svg" alt="iconCadeado" class="imgCadeado">
+                    </div>
+                    
+                    <p class="tituloPainel">Painel Administrativo</p>
+                </div>
                 <label for="senhaAcesso" class="senhaADM">Senha de Acesso</label>
-                <input type="text" name="senhaAcesso" id="senhaAcesso" placeholder="Digite a senha" required>
-
+                <input type="password" name="senhaAcesso" id="senhaAcesso" placeholder="Digite a senha" required>
+                <input type="submit" value="Entrar" class="botaoEntrar">
 
             </form>
-        </div>
-        <div class="informacoesMain">
-
         </div>
     </main>
     <footer>
@@ -73,7 +75,7 @@
             <p class="direitosAutorais">
                 &copy; 2025 Ayssa Doces. Todos os  direitos reservados.
             </p>
-            <a href="" class="admin">Admin</a>
+            <a href="./loginPainelAdministrativo.html" class="admin">Admin</a>
         </div>
     </footer>
 </body>
