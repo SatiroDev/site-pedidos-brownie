@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style-painel-administrativo.css">
+    <link rel="icon" type="image/png" href="../img/logo.jpg">
+    <title>Painel Administrativo</title>
+</head>
+<body>
+    <header class="cabecalho-tela5">
+        <a href="../index.html" class="voltar">
+            <img src="../img/sair.svg" alt="" class="iconVoltar">
+            <p>Voltar</p>
+        </a>
+    </header>
+    <main class="mainPrincipal-tela5">
+        <div class="conteudoMain-tela5">
+            <h1 class="tituloPainelAdministrativo">Painel Administrativo</h1>
+            <h3 class="msg">Gerencie os brownies da Ayssa Doces 🍫</h3>
+        </div>
+        <div class="informacoesMain">
+            <div class="formAdicionarProduto">
+                <form class="formulario" action="./confirmacaoPedido.html">
+                    <h2 class="tituloDoFormulario">
+                        + Adicionar Novo Brownie
+                    </h2>
+                    <label for="nomeProduto" class="campoProduto">
+                        Nome do Produto *
+                    </label>
+                    <input class="inCampoProduto" type="text" id="nomeProduto" name="nomeProduto" placeholder="Ex: Brownie com Doce de Leite" required>
+
+                    <label for="precoProduto" class="campoPreco">
+                        Preço *
+                    </label>
+                    <input class="inCampoPreco" type="text" id="precoProduto" name="precoProduto" placeholder="Ex: 14,00 ou R$ 14,00" required>
+
+                    <label for="urlImagem" class="campoURLimagem">
+                        URL da Imagem
+                    </label>
+                    <input class="urlImg" type="text" id="urlImagem" name="urlImagem" placeholder="https://exemplo.com/imagem.jpg (opcional)">
+                    <p class="observacao">Se deixar em branco, usará uma imagem padrão</p>
+                    
+                    <label for="descricaoProduto" class="campoDescricao">
+                        Descrição *
+                    </label>
+                    <input class="inCampoDescricao" type="text" id="descricaoProduto" name="descricaoProduto" placeholder="Descreva o brownie...">
+
+                    <input class="botaoAdicionarProduto" type="submit" id="enviar" value="+ Adicionar Produto">
+                </form>
+            </div>
+            <div class="informacoesProdutosAdicionados">
+                <h3 class="produtosAdicionadosTitulo">Produtos Adicionados (0)</h3>
+                <div class="produtosAdicionados">
+                    <p class="msgNenhum">Nenhum produto customizado ainda.</p>
+                    <p class="msgAdicione">Adicione um novo brownie usando o formulário ao lado!</p>
+                </div>
+            </div>
+        </div>
+        <div class="informacoes">
+            <p class="infos">Informações</p>
+            <ul>
+                <li>Os produtos adicionados aqui aparecerão automaticamente na página de produtos</li>
+                <li>Os dados são salvos no navegador (localStorage)</li>
+                <li>O preço pode ser inserido com ou sem "R$"</li>
+                <li>A imagem é opcional - deixe em branco para usar uma imagem padrão</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <div class="hFooter">
+            <div class="primeiraParte">
+                <h1 class="nomeMarca-2">Ayssa Doces</h1>
+                <p class="msg-2">Os melhores brownies da cidade!</p>
+            </div>
+            <div class="segundaParte">
+                <p class="entreEmContato">Entre em Contato</p>
+                <div class="redesSociais">
+                    <div class="whatsapp">
+                        <a href="" class="whatsapp">
+                            <img src="../img/whatsapp.svg" alt="pin whatsapp" class="zap">
+                            <p>WhatsApp</p>
+                        </a>
+                       
+                    </div>
+                    <div class="instagram">
+                        <a href="" class="instagram">
+                            <img src="../img/instagram.svg" alt="pin instagram" class="insta">
+                            <p>Instagram</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="terceiraParte">
+                <p class="horarioAtendimentoTitulo">
+                    Horário de Atendimento
+                </p>
+                <p class="diasAtendimento">
+                    Segunda a Sábado
+                </p>
+                <p class="horarioDeAtendimento">
+                    9h às 18h
+                </p>
+            </div>
+        </div>
+        <div class="fFooter">
+            <p class="msgFinal">
+                Feito com amor 💞
+            </p>
+            <p class="direitosAutorais">
+                &copy; 2025 Ayssa Doces. Todos os  direitos reservados.
+            </p>
+            <a href="./loginPainelAdministrativo.html" class="admin">Admin</a>
+        </div>
+    </footer>
+</body>
+</html>
