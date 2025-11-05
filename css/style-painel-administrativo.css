@@ -99,6 +99,7 @@ body {
     background-color: white;
     border-radius: 15px;
     border-color: #dcdcfc;
+    row-gap: 10px;
 }
 
 .formulario {
@@ -166,12 +167,14 @@ input {
     color: white;
     transition: filter 0.3s ease;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .botaoAdicionarProduto:hover {
     background: #511b9e;
     transition: filter 0.3s ease;
 }
+
 
 .informacoes {
     width: 83%;
@@ -326,4 +329,48 @@ footer {
     color: rgba(255, 255, 255, 0.192);
     text-decoration: none;
     padding-bottom: 5px;
+}
+
+
+.brownieAdicionado {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    border-radius: 15px;
+    width: 100%;
+    background-color: #f4f4fc;
+}
+
+.brownie1 {
+    width: 110px;
+    height: 110px;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.descricaoProduto {
+    width: 75%;
+}
+
+.nomeProduto {
+    color: #740ce4;
+    max-width: 60%;
+}
+
+.geral {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.descricao {
+    color: #664f57;
+}
+
+.preco {
+    display: flex;
+    color: #740ce4;
+    width: 65px;
 }

@@ -34,13 +34,14 @@ def criar_tabela_brownie():
     conectar = conectar_db()
     cursor = conectar.cursor()
     cursor.execute('''
-        id integer primary key autoincrement,
-        nome text not null,
-        descricao text not null,
-        preco decimal(5,2) not null,
-        imagem text not null,
-        disponivel boolean
-    ''')
+        create table if not exists brownie (
+            id integer primary key autoincrement,
+            nome text not null,
+            descricao text not null,
+            preco decimal(5,2) not null,
+            imagem text not null,
+            disponivel boolean
+    )''')
     conectar.commit()
     conectar.close()
 

@@ -22,7 +22,7 @@
         </div>
         <div class="informacoesMain">
             <div class="formAdicionarProduto">
-                <form class="formulario" action="./confirmacaoPedido.html">
+                <form class="formulario" action="/adicionar_brownie" method="post">
                     <h2 class="tituloDoFormulario">
                         + Adicionar Novo Brownie
                     </h2>
@@ -51,11 +51,28 @@
                 </form>
             </div>
             <div class="informacoesProdutosAdicionados">
-                <h3 class="produtosAdicionadosTitulo">Produtos Adicionados (0)</h3>
-                <div class="produtosAdicionados">
+                <h3 class="produtosAdicionadosTitulo">Produtos Adicionados</h3>
+
+                <div class="brownieAdicionado">
+                    <img src=".{{ imagem }}" alt="" class="img_brownie">
+                    <div class="geral">
+                        <div class="descricaoProduto">
+                            <p class="nomeProduto">
+                                {{ nome }}
+                            </p>
+                            <p class="descricao">
+                                {{ descricao }}
+                            </p>
+                        </div>
+                        <p class="preco">
+                            R$ {{ preco }}
+                        </p>
+                    </div>
+                </div>
+                <!-- <div class="produtosAdicionados">
                     <p class="msgNenhum">Nenhum produto customizado ainda.</p>
                     <p class="msgAdicione">Adicione um novo brownie usando o formulário ao lado!</p>
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="informacoes">
