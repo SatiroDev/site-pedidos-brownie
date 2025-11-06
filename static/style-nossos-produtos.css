@@ -1,0 +1,276 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #f6f0f9;
+    width: 100%;
+}
+
+.cabecalho-tela2 {
+    position: relative;
+    display: flex;
+    margin-left: 5%;
+    width: 90%;
+    margin-top: 20px;
+}
+
+.iconVoltar {
+    width: 20px;
+
+}
+
+.voltar {
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: 0.3s ease;
+    width: 100px;
+}
+
+.voltar:hover {
+    background-color: #ecd9ff;
+}
+
+
+.mainPrincipal-tela2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 25px;
+    width: 100%;
+    height: 85%;
+
+}
+
+.conteudoMain-tela2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    min-width: 300px;
+}
+
+.nossosProdutos {
+    font-size: 70px;
+    color: #511b9e;
+    margin: 0;
+    text-align: center;
+}
+
+.msg-NossosProdutos {
+    text-align: center;
+    font-size: 28px;
+    color: #664f57;
+    margin: 0;
+}
+
+.cardapio {
+    display: flex;
+    column-gap: 20px;
+    flex-wrap: wrap; 
+    row-gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgBrownie {
+    width: 300px;
+    transition: 0.2s ease;
+
+}
+
+.imgBrownie:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease;
+}
+
+.brownieCard {
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 490px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    transition: border 0.2s ease;
+    border: 0.1px solid transparent;
+    
+}
+
+.brownieCard:hover {
+    transition: 0.2s ease;
+    border: 0.1px solid;
+    border-color: #b474fc;
+    box-shadow: 0 7px 10px 0.1px rgb(167, 167, 167);
+}
+
+.descricaoGeral {
+    position:absolute;
+    height: 180px;
+    background-color: white;
+    padding: 20px;
+    bottom: 0;
+
+}
+
+.nome, .preco {
+    color: #740ce4;
+}
+
+.descricaoBrownie {
+    color: #664f57;
+}
+
+.fazerPedido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    height: 35px;
+    border-radius: 25px;
+    background: linear-gradient(to right ,#511b9e, #b474fc);
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-left: 25px;
+    transition: filter 0.3s ease;
+}
+
+.fazerPedido:hover {
+    background: #511b9e;
+    transition: filter 0.3s ease;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    background-color: #5a14a4;
+    color: rgb(175, 175, 175);
+    margin-top: 116px;
+}
+
+.hFooter {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid;
+    border-color: #740ce4;
+    width: 85%;
+    margin-top: 50px;
+    color: #c17ca1;
+    min-width: 25%;
+    flex-wrap: wrap; 
+    gap: 40px;
+    column-gap: 345px;
+}
+
+.primeiraParte {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 200px;
+}
+
+.nomeMarca-2 {
+    margin: 0;
+    color: #d6cfed;
+}
+
+.msg-2 {
+    margin: 0;
+}
+
+.zap {
+    width: 25px;
+}
+
+.insta {
+    width: 20px;
+}
+.segundaParte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    min-width: 200px;
+}
+
+.entreEmContato {
+    margin: 0;
+}
+
+.redesSociais {
+    display: flex;
+    column-gap: 20px;
+    margin: 0;
+    padding: 0;
+}   
+
+.whatsapp {
+    margin-top: 1px;
+    display: flex;
+    gap: 10px;
+    color: #c17ca1;
+    text-decoration: none;
+}
+
+.instagram {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #c17ca1;
+    text-decoration: none;
+}
+
+.terceiraParte {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    font-size: 18px;
+    gap: 5px;
+    min-width: 200px;
+}
+
+
+.horarioAtendimentoTitulo {
+    margin: 0;
+}
+
+.diasAtendimento {
+    margin: 0;
+}
+
+.horarioDeAtendimento {
+    margin: 0;
+}
+
+.fFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    color: #c17ca1;
+    margin-top: 20px;
+}
+
+.msgFinal {
+    margin: 0;
+}
+
+
+.direitosAutorais {
+    text-align: center;
+}
+
+.admin {
+    color: rgba(255, 255, 255, 0.192);
+    text-decoration: none;
+    padding-bottom: 5px;
+}
