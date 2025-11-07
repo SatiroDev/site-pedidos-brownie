@@ -244,7 +244,7 @@ footer {
     padding-bottom: 5px;
 }
 
-.alerta-erro {
+.alerta_erro {
     background-color: #ffdddd;
     color: #b10000;
     border: 1px solid #ff8c8c;
