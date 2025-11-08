@@ -5,6 +5,31 @@ body {
     width: 100%;
 }
 
+.cart {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(to right ,#511b9e, #b474fc);
+    right: 3%;
+    top: 5%;
+    border-radius: 50px;
+    transition: filter 0.3s ease;
+    z-index: 1;
+}
+
+.cart:hover {
+    background: #511b9e;
+    transition: filter 0.3s ease;
+}
+
+
+.carrinho {
+    width: 20px;
+}
+
 .cabecalho-tela5 {
     position: relative;
     display: flex;

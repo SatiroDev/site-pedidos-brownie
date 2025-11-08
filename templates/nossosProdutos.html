@@ -9,6 +9,9 @@
     <title>Nossos Produtos</title>
 </head>
 <body>
+    <a class="cart" href="">
+        <img class="carrinho" src="../static/img/iconCarrinho.svg" alt="iconCarrinho">
+    </a>
     <header class="cabecalho-tela2">
         <a href="/" class="voltar">
             <img src="../static/img/sair.svg" alt="" class="iconVoltar">
@@ -35,66 +38,13 @@
                         <p class="preco">
                             R$ {{ brownie[3] }}
                         </p>
-                        <a href="./finalizarPedidos-Brownie-1.html" class="fazerPedido">
-                            Fazer Pedido
+                        <a href="./finalizarPedidos-Brownie-1.html" class="adicionarCarrinho">
+                            <img class="carrinhoCart" src="../static/img/iconCarrinho.svg" alt="">
+                            Adicionar ao Carrinho
                         </a>
                     </div>
                 </div>
             {% endfor %}
-            <!-- <div class="brownieCard">
-                <img src="../img/brownie2.jpeg" alt="" class="imgBrownie-1">
-                <div class="descricaoGeral">
-                    <p class="nome">
-                        Brownie com Nutella
-                    </p>
-                    <p class="descricaoBrownie">
-                        Irresistível brownie recheado com creme de Nutella
-                    </p>
-                    <p class="preco">
-                        R$ 15,00
-                    </p>
-                    <a href="./finalizarPedidos-Brownie-2.html" class="fazerPedido">
-                        Fazer Pedido
-                    </a>
-                </div>
-                
-            </div>
-            <div class="brownieCard">
-                <img src="../img/brownie3.jpeg" alt="" class="imgBrownie-1">
-                <div class="descricaoGeral">
-                    <p class="nome">
-                        Brownie de Pote
-                    </p>
-                
-                    <p class="descricaoBrownie">
-                        Brownie em camadas com creme e ganache no potinho
-                    </p>
-                    <p class="preco">
-                        R$ 18,00
-                    </p>
-                    <a href="./finalizarPedidos-Brownie-3.html" class="fazerPedido">
-                        Fazer Pedido
-                    </a>
-                </div>
-            </div>
-            <div class="brownieCard">
-                <img src="../img/brownie4.jpeg" alt="" class="imgBrownie-1">
-                <div class="descricaoGeral">
-                    <p class="nome">
-                        Brownie com Morango
-                    </p>
-                
-                    <p class="descricaoBrownie">
-                        Brownie coberto com morangos frescos e chocolate
-                    </p>
-                    <p class="preco">
-                        R$ 16,00
-                    </p>
-                    <a href="./finalizarPedidos-Brownie-4.html" class="fazerPedido">
-                        Fazer Pedido
-                    </a>
-                </div>
-            </div> -->
         </div>
     </main>
     <footer>

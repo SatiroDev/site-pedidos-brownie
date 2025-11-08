@@ -1,9 +1,5 @@
 from flask import Blueprint, render_template, request, redirect, url_for
 
-import sqlite3
-
-import requests, os
-
 from db import conectar_db
 
 brownies_bp = Blueprint('brownies', __name__)
@@ -35,10 +31,5 @@ def listar_brownies():
     cursor.execute("select * from brownie")
     brownies = cursor.fetchall()
     conectar.close()
-    for brownie in brownies:
-        for i in range(len(brownie)):
-
-            print(brownie[i])
-
     return render_template('nossosProdutos.html', brownies=brownies)
 
