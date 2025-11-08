@@ -54,7 +54,7 @@ Este projeto foi criado com o intuito de **praticar e aplicar conceitos fundamen
 ## 🚀 Publicação
 
 O site está disponível online:  
-👉 **[Acesse o projeto aqui](https://satirodev.github.io/site-pedidos-brownie/)**
+👉 **[Acesse o projeto aqui](https://site-pedidos-brownie.onrender.com)**
 
 ---
 
