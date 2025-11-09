@@ -50,7 +50,7 @@ def tela_administracao():
             else:
                 imagem = f"/static/img/{imagem_url}"
         else:
-            imagem = f"/static/img/{imagem_url}"
+            imagem = url_for('static', filename='img/brownie1.jpeg')
         disponivel = True   
 
         conectar = conectar_db()
