@@ -33,3 +33,11 @@ def listar_brownies():
     conectar.close()
     return render_template('nossosProdutos.html', brownies=brownies)
 
+@brownies_bp.route('/excluir_brownie/<int:id>', methods=['POST'])
+def excluir_brownie(id):
+    conectar = conectar_db()
+    cursor = conectar.cursor()
+    cursor.execute("delete from brownie where id = ?", (id,))
+    conectar.commit()
+    conectar.close()
+    return redirect(url_for('brownies.listar_brownies'))

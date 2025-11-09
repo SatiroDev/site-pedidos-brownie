@@ -118,13 +118,25 @@ body {
     display: flex;
     flex-direction: column;
     width: 620px;
+    height: 503px;
     min-width: 230px; /* largura das telas*/
     border: 2px solid;
     padding: 15px;
     background-color: white;
     border-radius: 15px;
     border-color: #dcdcfc;
-    row-gap: 10px;
+    row-gap: 15px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.botaoLixeira {
+    border: none;
+    cursor: pointer;
+}
+
+.lixeira {
+    width: 25px;
 }
 
 .formulario {

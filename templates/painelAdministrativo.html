@@ -53,29 +53,43 @@
                     <input class="botaoAdicionarProduto" type="submit" id="enviar" value="+ Adicionar Produto">
                 </form>
             </div>
+            
             <div class="informacoesProdutosAdicionados">
-                <h3 class="produtosAdicionadosTitulo">Produtos Adicionados</h3>
-
-                <div class="brownieAdicionado">
-                    <img src="{{ imagem }}" alt="" class="img_brownie">
-                    <div class="geral">
-                        <div class="descricaoProduto">
-                            <p class="nomeProduto">
-                                {{ nome }}
-                            </p>
-                            <p class="descricao">
-                                {{ descricao }}
-                            </p>
+                <h3 class="produtosAdicionadosTitulo">Todos os Produtos</h3>
+                {% if brownies %}
+                    {% for brownie in brownies %}
+                    <div class="brownieAdicionado">
+                        
+                        <img src="{{ brownie[4] }}" alt="" class="img_brownie">
+                        <div class="geral">
+                            <div class="descricaoProduto">
+                                <p class="nomeProduto">
+                                    {{ brownie[1] }}
+                                </p>
+                                <p class="descricao">
+                                    {{ brownie[2] }}
+                                </p>
+                                <p class="preco">
+                                    R$ {{ brownie[3] }}
+                                </p>
+                            </div>
+                            <form action="/excluir_brownie/{{ brownie [0] }}" method="POST">
+                                <button class="botaoLixeira">
+                                    <img class="lixeira" src="../static/img/iconLixeira.svg" alt="iconLixeira">
+                                </button>
+                                
+                            </form>
+                            
+                            
                         </div>
-                        <p class="preco">
-                            R$ {{ preco }}
-                        </p>
                     </div>
-                </div>
-                <!-- <div class="produtosAdicionados">
-                    <p class="msgNenhum">Nenhum produto customizado ainda.</p>
-                    <p class="msgAdicione">Adicione um novo brownie usando o formulário ao lado!</p>
-                </div> -->
+                    {% endfor %}
+                {% else %}
+                    <div class="produtosAdicionados">
+                        <p class="msgNenhum">Nenhum produto disponível.</p>
+                        <p class="msgAdicione">Adicione um novo brownie usando o formulário ao lado!</p>
+                    </div>
+                {% endif %}
             </div>
         </div>
         <div class="informacoes">
